@@ -1,0 +1,17 @@
+twitter:
+  - tweet:
+      when: 2022-01-01T18:00Z-05:00
+      body: This is my first Tweet using GitTweet!
+      media: NONE
+  - thread:
+      when: 2022-01-01T06:00Z-05:00
+      - tweet:
+          body: This is my first thread.
+          media: none
+      - tweet:
+          body: |
+            1/2 Each Tweet is a reply to the original thus making it a
+            thread.
+      - tweet:
+          body: |
+            2/2 And it can keep going!
