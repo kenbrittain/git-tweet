@@ -1,12 +1,24 @@
-using Xunit;
+namespace GitTweet;
 
-namespace GitTweet.Tests;
-
-public class UnitTest1
+public class TwitterTests
 {
     [Fact]
-    public void Test1()
+    public void Post_EmptyStatus_Fails()
     {
+	var mockClient = new Mock<ITwitterClient>();
+	var twitter = new Twitter(mockClient.Object);
+	var result = twitter.PostTweet("");
 
+	Assert.False(result);
     }
+
+    /*
+    [Fact]
+    public void Method_Scenario_Expectation()
+    {
+        // Arrange
+        // Act
+        // Assert
+    }
+    */
 }
