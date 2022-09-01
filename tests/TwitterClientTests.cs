@@ -3,7 +3,7 @@ namespace GitTweet;
 public class TwitterTests
 {
     [Fact]
-    public void Post_EmptyStatus_Fails()
+    public void PostTweet_EmptyBody_Fails()
     {
 	var mockClient = new Mock<ITwitterClient>();
 	var twitter = new Twitter(mockClient.Object);
