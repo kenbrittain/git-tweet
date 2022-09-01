@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var appVersion = "1.0";
+
+Console.WriteLine($"Git Tweet v{appVersion}");
